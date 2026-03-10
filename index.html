@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex Rivera — Designer, Animator & Creative Thinker. Portfolio of interactive design and animation work." />
+  <title>Alex Rivera — Designer & Animator</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+  <!-- =====================================================
+       NAVIGATION
+  ====================================================== -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+
+      <a href="#hero" class="nav-logo" aria-label="Alex Rivera — Home">
+        <span class="logo-mark">AR</span>
+        <span class="logo-text">Alex Rivera</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#work"    class="nav-link">Work</a></li>
+        <li><a href="#skills"  class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="#contact" class="nav-cta" aria-label="Get in touch">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+      <div class="mobile-nav-inner">
+        <nav>
+          <a href="#about"   class="mobile-nav-link">About</a>
+          <a href="#work"    class="mobile-nav-link">Work</a>
+          <a href="#skills"  class="mobile-nav-link">Skills</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+        </nav>
+        <div class="mobile-nav-foot">
+          <a href="#" aria-label="Behance">Behance</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+    <section id="hero" aria-labelledby="hero-name">
+      <!-- Decorative background elements -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+        <div class="hero-grid-lines"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge animate-on-scroll">
+          <span class="badge-dot"></span>
+          Interactive Design &amp; Animation — Class of 2025
+        </div>
+
+        <h1 id="hero-name" class="hero-name">
+          <span class="hero-name-line animate-on-scroll">Alex</span>
+          <span class="hero-name-line hero-name-accent animate-on-scroll delay-1">Rivera.</span>
+        </h1>
+
+        <p class="hero-tagline animate-on-scroll delay-2">
+          <span id="typing-target"></span><span class="typing-cursor" aria-hidden="true">|</span>
+        </p>
+
+        <div class="hero-actions animate-on-scroll delay-3">
+          <a href="#work" class="btn btn-primary">
+            View My Work
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">Say Hello</a>
+        </div>
+
+        <div class="hero-scroll-indicator animate-on-scroll delay-4" aria-hidden="true">
+          <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+          </div>
+          <span>Scroll to explore</span>
+        </div>
+      </div>
+
+      <div class="hero-side animate-on-scroll delay-2">
+        <div class="hero-card">
+          <img
+            src="https://placehold.co/460x580/1c1c1e/f5c842?text=Alex+Rivera"
+            alt="Alex Rivera — profile portrait"
+            class="hero-card-img"
+            width="460"
+            height="580"
+          />
+          <div class="hero-card-tag">
+            <span class="available-dot"></span>
+            Available for work
+          </div>
+        </div>
+        <div class="hero-stat-pill">
+          <strong>12+</strong> projects shipped
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="section-container">
+
+        <div class="section-label animate-on-scroll">
+          <span class="label-num">01</span>
+          <span>About Me</span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo-col animate-on-scroll">
+            <div class="about-photo-wrap">
+              <img
+                src="https://placehold.co/440x520/1c1c1e/f5c842?text=Portrait"
+                alt="Alex Rivera at work"
+                class="about-photo"
+                width="440"
+                height="520"
+                loading="lazy"
+              />
+              <div class="about-photo-deco" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <div class="about-text-col">
+            <h2 id="about-heading" class="section-title animate-on-scroll">
+              I design with <em>intent</em> and animate with <em>purpose.</em>
+            </h2>
+
+            <p class="about-body animate-on-scroll delay-1">
+              I'm a multidisciplinary designer who loves bringing ideas to life through motion, interaction, and visual storytelling. Currently finishing my diploma in Interactive Design and Animation.
+            </p>
+            <p class="about-body animate-on-scroll delay-2">
+              Whether it's crafting a brand identity from scratch, animating a complex motion piece, or designing an interface that feels intuitive — I care about every pixel, every frame, every interaction.
+            </p>
+
+            <div class="about-stats animate-on-scroll delay-3">
+              <div class="stat">
+                <span class="stat-n" data-count="3">0</span><span class="stat-n">+</span>
+                <span class="stat-l">Years of study</span>
+              </div>
+              <div class="stat-sep" aria-hidden="true"></div>
+              <div class="stat">
+                <span class="stat-n" data-count="12">0</span>
+                <span class="stat-l">Projects shipped</span>
+              </div>
+              <div class="stat-sep" aria-hidden="true"></div>
+              <div class="stat">
+                <span class="stat-n" data-count="7">0</span>
+                <span class="stat-l">Tools mastered</span>
+              </div>
+            </div>
+
+            <a href="#work" class="btn btn-primary animate-on-scroll delay-4">
+              See My Projects
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         WORK / PROJECTS
+    ====================================================== -->
+    <section id="work" aria-labelledby="work-heading">
+      <div class="section-container">
+
+        <div class="section-label animate-on-scroll">
+          <span class="label-num">02</span>
+          <span>Selected Work</span>
+        </div>
+
+        <div class="work-header animate-on-scroll">
+          <h2 id="work-heading" class="section-title">Things I've made.</h2>
+          <a href="#contact" class="work-all-link">
+            View all work
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card project-card--large animate-on-scroll delay-1">
+            <a href="#" class="project-link" aria-label="View Cafe Luna brand identity project">
+              <div class="project-img-wrap">
+                <img
+                  src="https://placehold.co/800x500/1c1c1e/f5c842?text=Cafe+Luna"
+                  alt="Brand Identity — Cafe Luna project"
+                  class="project-img"
+                  width="800" height="500"
+                  loading="lazy"
+                />
+                <div class="project-hover-overlay" aria-hidden="true">
+                  <span class="project-open-btn">Open Project ↗</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-info-left">
+                  <span class="project-tag">Brand Identity</span>
+                  <h3 class="project-title">Cafe Luna</h3>
+                  <p class="project-desc">Full visual identity — logo, type, packaging, and print collateral for a boutique café brand.</p>
+                </div>
+                <span class="project-year">2025</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card animate-on-scroll delay-2">
+            <a href="#" class="project-link" aria-label="View Motion Reel 2025">
+              <div class="project-img-wrap">
+                <img
+                  src="https://placehold.co/600x380/1c1c1e/818cf8?text=Motion+Reel"
+                  alt="Motion Reel 2025"
+                  class="project-img"
+                  width="600" height="380"
+                  loading="lazy"
+                />
+                <div class="project-hover-overlay" aria-hidden="true">
+                  <span class="project-open-btn">Watch Reel ↗</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-info-left">
+                  <span class="project-tag">Motion Graphics</span>
+                  <h3 class="project-title">Motion Reel 2025</h3>
+                  <p class="project-desc">Title sequences, UI animation &amp; short-form video.</p>
+                </div>
+                <span class="project-year">2025</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card animate-on-scroll delay-3">
+            <a href="#" class="project-link" aria-label="View Fitness App UI Concept">
+              <div class="project-img-wrap">
+                <img
+                  src="https://placehold.co/600x380/1c1c1e/6366f1?text=Fitness+App"
+                  alt="UI Concept — Fitness App"
+                  class="project-img"
+                  width="600" height="380"
+                  loading="lazy"
+                />
+                <div class="project-hover-overlay" aria-hidden="true">
+                  <span class="project-open-btn">Case Study ↗</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-info-left">
+                  <span class="project-tag">UI / UX</span>
+                  <h3 class="project-title">Fitness App UI</h3>
+                  <p class="project-desc">Goal-driven interface with animated data visuals.</p>
+                </div>
+                <span class="project-year">2024</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card animate-on-scroll delay-1">
+            <a href="#" class="project-link" aria-label="View 3D Character Design">
+              <div class="project-img-wrap">
+                <img
+                  src="https://placehold.co/600x380/1c1c1e/f5c842?text=3D+Character"
+                  alt="3D Character Design"
+                  class="project-img"
+                  width="600" height="380"
+                  loading="lazy"
+                />
+                <div class="project-hover-overlay" aria-hidden="true">
+                  <span class="project-open-btn">View Project ↗</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-info-left">
+                  <span class="project-tag">3D / Blender</span>
+                  <h3 class="project-title">3D Character Design</h3>
+                  <p class="project-desc">Stylised character sculpt and rig for animation.</p>
+                </div>
+                <span class="project-year">2024</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card animate-on-scroll delay-2">
+            <a href="#" class="project-link" aria-label="View Event Poster Series">
+              <div class="project-img-wrap">
+                <img
+                  src="https://placehold.co/600x380/1c1c1e/f59842?text=Poster+Series"
+                  alt="Event Poster Series"
+                  class="project-img"
+                  width="600" height="380"
+                  loading="lazy"
+                />
+                <div class="project-hover-overlay" aria-hidden="true">
+                  <span class="project-open-btn">View Series ↗</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-info-left">
+                  <span class="project-tag">Graphic Design</span>
+                  <h3 class="project-title">Event Poster Series</h3>
+                  <p class="project-desc">Bold typographic posters for a design festival.</p>
+                </div>
+                <span class="project-year">2024</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card animate-on-scroll delay-3">
+            <a href="#" class="project-link" aria-label="View Interactive Infographic">
+              <div class="project-img-wrap">
+                <img
+                  src="https://placehold.co/600x380/1c1c1e/34d399?text=Infographic"
+                  alt="Interactive Infographic"
+                  class="project-img"
+                  width="600" height="380"
+                  loading="lazy"
+                />
+                <div class="project-hover-overlay" aria-hidden="true">
+                  <span class="project-open-btn">Explore ↗</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-info-left">
+                  <span class="project-tag">Interactive / Web</span>
+                  <h3 class="project-title">Interactive Infographic</h3>
+                  <p class="project-desc">Data storytelling built with HTML, CSS &amp; SVG.</p>
+                </div>
+                <span class="project-year">2023</span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SKILLS
+    ====================================================== -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="section-container">
+
+        <div class="section-label animate-on-scroll">
+          <span class="label-num">03</span>
+          <span>Toolkit</span>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-left">
+            <h2 id="skills-heading" class="section-title animate-on-scroll">
+              Tools I reach for every day.
+            </h2>
+            <p class="skills-intro animate-on-scroll delay-1">
+              Across design, motion, 3D, and front-end — a versatile toolkit built through years of hands-on project work.
+            </p>
+          </div>
+
+          <ul class="skills-grid" role="list" aria-label="Skills and tools">
+            <li class="skill-badge animate-on-scroll delay-1">
+              <span class="skill-icon" aria-hidden="true">✦</span>
+              <span class="skill-name">Figma</span>
+              <span class="skill-type">UI · Prototype</span>
+            </li>
+            <li class="skill-badge animate-on-scroll delay-2">
+              <span class="skill-icon" aria-hidden="true">✦</span>
+              <span class="skill-name">After Effects</span>
+              <span class="skill-type">Motion</span>
+            </li>
+            <li class="skill-badge animate-on-scroll delay-3">
+              <span class="skill-icon" aria-hidden="true">✦</span>
+              <span class="skill-name">Photoshop</span>
+              <span class="skill-type">Image Editing</span>
+            </li>
+            <li class="skill-badge animate-on-scroll delay-1">
+              <span class="skill-icon" aria-hidden="true">✦</span>
+              <span class="skill-name">Illustrator</span>
+              <span class="skill-type">Vector · Brand</span>
+            </li>
+            <li class="skill-badge animate-on-scroll delay-2">
+              <span class="skill-icon" aria-hidden="true">✦</span>
+              <span class="skill-name">Blender</span>
+              <span class="skill-type">3D · Animation</span>
+            </li>
+            <li class="skill-badge animate-on-scroll delay-3">
+              <span class="skill-icon" aria-hidden="true">✦</span>
+              <span class="skill-name">HTML / CSS</span>
+              <span class="skill-type">Front-End</span>
+            </li>
+            <li class="skill-badge animate-on-scroll delay-1">
+              <span class="skill-icon" aria-hidden="true">✦</span>
+              <span class="skill-name">Premiere Pro</span>
+              <span class="skill-type">Video Editing</span>
+            </li>
+            <li class="skill-badge skill-badge--cta animate-on-scroll delay-2">
+              <span class="skill-name">Always learning more →</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="section-container">
+
+        <div class="section-label animate-on-scroll">
+          <span class="label-num">04</span>
+          <span>Get In Touch</span>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-left">
+            <h2 id="contact-heading" class="contact-headline animate-on-scroll">
+              Let's make something
+              <br /><span class="contact-headline-accent">worth remembering.</span>
+            </h2>
+            <p class="contact-body animate-on-scroll delay-1">
+              Open to freelance projects, collaborations, internships, and full-time opportunities. Don't hesitate to reach out.
+            </p>
+            <a href="mailto:hello@alexrivera.design" class="contact-email animate-on-scroll delay-2">
+              hello@alexrivera.design
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="contact-right animate-on-scroll delay-2">
+            <p class="socials-label">Find me on</p>
+            <nav class="socials" aria-label="Social media links">
+              <a href="#" class="social-link" aria-label="Behance profile">
+                <span>Behance</span>
+                <span class="social-arrow">↗</span>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn profile">
+                <span>LinkedIn</span>
+                <span class="social-arrow">↗</span>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram profile">
+                <span>Instagram</span>
+                <span class="social-arrow">↗</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <span class="footer-logo">AR</span>
+      <p class="footer-copy">© 2025 Alex Rivera. Built with AI.</p>
+      <button class="footer-top-btn" id="back-to-top" aria-label="Scroll back to top">
+        ↑ Top
+      </button>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
