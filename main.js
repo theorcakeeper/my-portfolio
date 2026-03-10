@@ -1,5 +1,5 @@
 /* ================================================================
-   Alex Rivera Portfolio — main.js
+   Yeji Kim Portfolio — main.js
    Covers: Phases 7.1, 7.2, 7.3 + bonus features from playbook
    ================================================================ */
 

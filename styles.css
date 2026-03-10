@@ -1,5 +1,5 @@
 /* ================================================================
-   Alex Rivera Portfolio — styles.css
+   Yeji Kim Portfolio — styles.css
    Aesthetic: Warm Neo-Brutalist
    Tokens: Exact from playbook spec
    ================================================================ */
@@ -358,7 +358,7 @@ body.cursor-hover .cursor {
 }
 
 .hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-.hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; transform: scYeji(0); }
 .hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
 /* Mobile nav */
@@ -552,13 +552,13 @@ body.cursor-hover .cursor {
   height: 4px;
   background: var(--accent-color);
   border-radius: 2px;
-  transform: scaleX(0);
+  transform: scYeji(0);
   transform-origin: left;
   animation: underline-grow 0.8s 1.2s var(--ease-expo) forwards;
 }
 
 @keyframes underline-grow {
-  to { transform: scaleX(1); }
+  to { transform: scYeji(1); }
 }
 
 .hero-tagline {
